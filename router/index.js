@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import home from '@/views/homePage.vue';
+import register from '@/views/registerPage.vue';
 import login from '@/views/loginPage.vue';
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -13,6 +15,11 @@ const routes = [
     },
     {
         path: '/:id',
+        name: 'registerPage',
+        component: register,
+    },
+    {
+        path: '/id',
         name: 'loginPage',
         component: login,
     }
