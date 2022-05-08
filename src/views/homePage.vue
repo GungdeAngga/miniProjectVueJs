@@ -1,4 +1,5 @@
 <template>
+<div id="homePage">
   <v-app class="homePage">
 <div>
     <v-app-bar
@@ -48,10 +49,7 @@
 
             <v-spacer></v-spacer>
 
-          <v-btn text>
-            support
-          </v-btn>
-
+          <v-btn text>import loginPage from './views/loginPage';
           <v-btn text>
             security
           </v-btn>
@@ -60,6 +58,7 @@
     </v-footer>
 </div>
   </v-app>
+</div>
 </template>
 
 <script>
