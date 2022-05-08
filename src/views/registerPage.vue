@@ -16,9 +16,6 @@
         support
       </v-btn>
 
-      <v-btn text>
-        angga aditya
-      </v-btn>
     </v-app-bar>
 </div>
 
