@@ -1,5 +1,5 @@
 <template>
-  <v-app class="registerPage">
+  <v-app class="pulsaPage">
 <div>
     <v-app-bar
       color="#4E45CE"
@@ -16,6 +16,9 @@
         support
       </v-btn>
 
+      <v-btn text>
+        angga aditya
+      </v-btn>
     </v-app-bar>
 </div>
 
@@ -55,7 +58,7 @@
 
 <script>
 export default {
-    name: "registerPage",
+    name: "pulsaPage",
     data: () => ({
     }),
 }
