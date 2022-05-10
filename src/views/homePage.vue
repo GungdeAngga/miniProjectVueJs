@@ -49,10 +49,15 @@
 
             <v-spacer></v-spacer>
 
-          <v-btn text>import loginPage from './views/loginPage';
-          <v-btn text>
-            security
-          </v-btn>
+
+        <v-btn text>
+          support
+        </v-btn>    
+
+        <v-btn text>
+          security
+        </v-btn>
+
         </v-card-title>
       </v-card>
     </v-footer>
