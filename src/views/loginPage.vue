@@ -1,5 +1,5 @@
 <template>
-<div id="loginPage">
+
   <v-app class="loginPage">
 <div>
     <v-app-bar
@@ -56,7 +56,7 @@
     </v-footer>
 </div>
   </v-app>
-</div>
+
 </template>
 
 <script>
