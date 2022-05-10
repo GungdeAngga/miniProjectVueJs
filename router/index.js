@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import home from '@/views/homePage.vue';
-import register from '@/views/registerPage.vue';
-import login from '@/views/loginPage.vue';
-import pulsa from '@/views/pulsaPage.vue';
+import Home from '@/views/homePage.vue';
+import Register from '@/views/registerPage.vue';
+import Login from '@/views/loginPage.vue';
+import Pulsa from '@/views/pulsaPage.vue';
 
 Vue.use(VueRouter);
 
@@ -12,22 +12,22 @@ const routes = [
     {
         path: '/',
         name: 'homePage',
-        component: home,
+        component: Home,
     },
     {
-        path: '/:id',
+        path: '/register',
         name: 'registerPage',
-        component: register,
+        component: Register,
     },
     {
-        path: '/id',
+        path: '/login',
         name: 'loginPage',
-        component: login,
+        component: Login,
     },
     {
-        path: '/:id',
+        path: '/pulsa',
         name: 'pulsaPage',
-        component: pulsa,
+        component: Pulsa,
     },
 
 ];
