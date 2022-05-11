@@ -21,14 +21,12 @@
 </div>
 
 
-<div style="background-color:#2C2D30; height:100%; ">
-  <div class="login">
-
-  </div>
+<div>
+ 
 </div>
 
 
-<div style="position:absolute; bottom:0px; width:100%; ">
+<div class="footer">
     <v-footer
     dark
     padless

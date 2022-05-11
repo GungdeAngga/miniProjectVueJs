@@ -23,7 +23,7 @@
 
 </div>
 
-<div style="position:absolute; bottom:0px; width:100%; ">
+<div class="footer">
     <v-footer
     dark
     padless
