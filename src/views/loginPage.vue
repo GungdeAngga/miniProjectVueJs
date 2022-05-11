@@ -21,14 +21,12 @@
 </div>
 
 
-<div style="background-color:#2C2D30; height:100%; ">
-  <div class="login">
-
-  </div>
+<div>
+ 
 </div>
 
 
-<div style="position:absolute; bottom:0px; width:100%; ">
+<div class="footer">
     <v-footer
     dark
     padless
@@ -71,8 +69,6 @@ export default {
 
 .login{
   background: #424242;
-  margin: 70px auto;
-  padding: 40px;
   width: 600px;
   height: 130px;
 }

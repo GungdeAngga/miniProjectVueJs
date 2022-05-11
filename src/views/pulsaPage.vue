@@ -8,25 +8,100 @@
       style="height: 137px;"
     >
 
-      <v-toolbar-title>Corsair</v-toolbar-title>
+  <div class="buttonBack">
+    <v-btn text
+    router-link to="/">
+        back
+    </v-btn>
+  </div>
+          <div class="header">
+            <span class="headerTitle"><strong>Corsair</strong></span>
 
-      <v-spacer></v-spacer>
+            <v-spacer></v-spacer>
 
-      <v-btn text>
-        support
-      </v-btn>
+            <v-btn text>
+              support
+            </v-btn>
 
-      <v-btn text>
-        angga aditya
-      </v-btn>
+            <v-btn text>
+              angga aditya
+            </v-btn>
+          </div>
     </v-app-bar>
 </div>
 
-<div>
 
+
+<div class="place">
+  <div class="internalPage">
+    <div class="jmlhUang">
+      <span class="text">Account Balance</span> <br>
+      <span class="balance">Rp 10.0000.000</span>
+
+          <v-btn depressed large
+          dark color="#4E45CE"
+          width="185px">
+            Top Up
+          </v-btn>
+        
+    </div>
+
+        <div class="buttonPlace">
+          <div class="buttonPayment">
+              <v-btn depressed large
+              dark color="#4E45CE"
+              width="280px"
+              height="80px">
+                Rp.10.000
+              </v-btn>
+
+              <v-btn depressed large
+              dark color="#4E45CE"
+              width="280px"
+              height="80px">
+                Rp.20.000
+              </v-btn>
+
+          </div>
+          <br>
+          <div class="buttonPayment">
+              <v-btn depressed large
+              dark color="#4E45CE"
+              width="280px"
+              height="80px">
+                Rp.50.000
+              </v-btn>
+
+              <v-btn depressed large
+              dark color="#4E45CE"
+              width="280px"
+              height="80px">
+                Rp.100.000
+              </v-btn>
+          </div>
+          <br>
+          <div class="buttonPayment">
+              <v-btn depressed large
+              dark color="#4E45CE"
+              width="280px"
+              height="80px">
+                Rp.150.000
+              </v-btn>
+
+              <v-btn depressed large
+              dark color="#4E45CE"
+              width="280px"
+              height="80px">
+                Rp.200.000
+              </v-btn>
+          </div>
+        </div>
+      </div>
 </div>
 
-<div style="position:absolute; bottom:0px; width:100%; ">
+
+
+<div class="footer">
     <v-footer
     dark
     padless
@@ -38,17 +113,19 @@
         style="height:115px" 
       >
         <v-card-title class="#110E0E">
+          <div class="footerTitle">
             <strong>Corsair</strong>
 
             <v-spacer></v-spacer>
 
-          <v-btn text>
-            support
-          </v-btn>
+            <v-btn text>
+              support
+            </v-btn>    
 
-          <v-btn text>
-            security
-          </v-btn>
+            <v-btn text>
+              security
+            </v-btn>
+          </div>
         </v-card-title>
       </v-card>
     </v-footer>
@@ -66,19 +143,15 @@ export default {
 
 <style>
 
-.jmlhUang{
-  background: #424242;
-  margin: 70px auto;
-  padding: 40px;
+.buttonPlace{
   width: 600px;
-  height: 130px;
 }
 
-h5{
-  color: white;
+.buttonPayment{
+  display: flex;
+  column-count: 2;
+  column-gap: 35px;
+  
 }
 
-h2{
-  color: white;
-}
 </style>

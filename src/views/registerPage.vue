@@ -23,7 +23,7 @@
 
 </div>
 
-<div style="position:absolute; bottom:0px; width:100%; ">
+<div class="footer">
     <v-footer
     dark
     padless
@@ -63,13 +63,7 @@ export default {
 
 <style>
 
-.jmlhUang{
-  background: #424242;
-  margin: 70px auto;
-  padding: 40px;
-  width: 600px;
-  height: 130px;
-}
+
 
 h5{
   color: white;
