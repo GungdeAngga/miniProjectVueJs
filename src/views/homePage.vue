@@ -26,36 +26,41 @@
 
 
 <div class="place">
-
+  <div class="internalPage">
     <div class="jmlhUang">
-    <h5>Account Balance</h5>
-    <h2>Rp 10.0000.000</h2>
-    <div>
-      <br>
-      <br>
-    </div>
-        <div class="threeButton">
-            <v-btn depressed large
-            dark color="#4E45CE"
-            width="185px">
-              send
-            </v-btn>
+      <span class="text">Account Balance</span> <br>
+      <span class="balance">Rp 10.0000.000</span>
+       <!--fungsiHomeBranches--> 
+          <v-btn depressed large
+          dark color="#4E45CE"
+          width="185px">
+            Top Up
+          </v-btn>
+        
+      </div>
 
-            <v-btn depressed large
-            dark color="#4E45CE"
-            width="185px"
-            router-link to="/pulsa">
-              pulsa
-            </v-btn>
+          <div class="threeButton">
+              <v-btn depressed large
+              dark color="#4E45CE"
+              width="185px">
+                send
+              </v-btn>
 
-            <v-btn depressed large
-            dark color="#4E45CE"
-            width="185px">
-              withdraw
-            </v-btn>
-        </div>
-    </div>
+              <v-btn depressed large
+              dark color="#4E45CE"
+              width="185px"
+              router-link to="/pulsa">
+                pulsa
+              </v-btn>
 
+              <v-btn depressed large
+              dark color="#4E45CE"
+              width="185px">
+                withdraw
+              </v-btn>
+          </div>
+    
+  </div>
 </div>
 
 
@@ -109,8 +114,14 @@ export default {
   display: flex;
 }
 
+.internalPage{
+  margin: 10px auto;
+}
+
 .jmlhUang{
   background: #424242;
+  margin: 30px auto;
+  padding: 30px ;
   width: 600px;
   height: 130px;
 }
@@ -118,15 +129,15 @@ export default {
 .threeButton{
   display: flex;
   column-count: 3;
-  column-gap: 30px;
+  column-gap: 22px;
 }
 
-h5{
+.text{
   color: white;
   font-size: 15px;
 }
 
-h2{
+.balance{
   color: white;
   font-size: 35px;
 }
