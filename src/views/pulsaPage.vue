@@ -22,9 +22,41 @@
     </v-app-bar>
 </div>
 
-<div>
+
+
+<div style="background-color:#2C2D30; height:100%; ">
+
+    <div class="jmlhUang">
+    <h5>Account Balance</h5>
+    <h2>Rp 10.0000.000</h2>
+    <div>
+      <br>
+      <br>
+      <p>Pulsa</p>
+    </div>
+    <!-- note : buat tulisan di footer sama header ke tengah -->
+        <div class="threeButton">
+            <v-btn depressed large
+            dark color="#4E45CE">
+              send
+            </v-btn>
+
+            <v-btn depressed large
+            dark color="#4E45CE">
+              pulsa
+            </v-btn>
+
+            <v-btn depressed large
+            dark color="#4E45CE">
+              withdraw
+            </v-btn>
+            <!-- buat kotak nya sama -->
+        </div>
+    </div>
 
 </div>
+
+
 
 <div style="position:absolute; bottom:0px; width:100%; ">
     <v-footer
