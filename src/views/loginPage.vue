@@ -25,7 +25,7 @@
         <v-btn depressed large
         dark color="#4E45CE"
         width="185px"
-        router-link to="/">
+        router-link to="/"> <!--tombol login belum singkron (main trobos login)-->
           login
         </v-btn>
       </div>
