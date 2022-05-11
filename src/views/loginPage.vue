@@ -51,7 +51,7 @@
         class="flex"
         flat
         tile
-        style="height:115px" 
+        style="height:135px" 
       >
         <v-card-title class="#110E0E">
           <div class="footerTitle">
