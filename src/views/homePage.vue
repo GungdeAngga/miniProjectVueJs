@@ -14,11 +14,12 @@
             <v-spacer></v-spacer>
 
             <v-btn text>
-              support
+              riwayat
             </v-btn>
 
-            <v-btn text>
-              angga aditya
+            <v-btn text
+            router-link to="/login">
+              Log Out
             </v-btn>
           </div>
         </v-app-bar>
@@ -30,15 +31,15 @@
   <div class="internalPage">
     <div class="jmlhUang">
       <span class="text">Account Balance</span><br>
-      <span class="balance">Rp 10.0000.000</span>
-       <!--fungsiHomeBranches--> 
+      <span class="balance">Rp 10.0000.000
 
           <v-btn depressed large
           dark color="#4E45CE"
-          width="185px">
+          width="185px"
+          style="margin-left:100px">
             Top Up
           </v-btn>
-        
+        </span>
     </div>
           
           <div class="threeButton">
