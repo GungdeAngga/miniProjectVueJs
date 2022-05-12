@@ -1,5 +1,5 @@
 <template>
-  <v-app class="topupPage">
+  <v-app class="withdrawPage">
 <div>
     <v-app-bar
       color="#4E45CE"
@@ -43,12 +43,12 @@
           dark color="#4E45CE"
           width="185px"
           style="margin-left:100px">
-            Top Up
+            withdraw
           </v-btn>
         </span>
     </div>
 
-<div class="titlePage"><div><span class="txPage">Top up</span></div></div>
+<div class="titlePage"><div><span class="txPage">Withdraw</span></div></div>
 
         <div class="buttonPlace">
           <div class="buttonPayment">
@@ -139,35 +139,8 @@
 
 <script>
 export default {
-    name: "topupPage",
+    name: "withdrawPage",
     data: () => ({
     }),
 }
 </script>
-
-<style>
-
-.titlePage{
-    display: flex;
-    justify-content: center;
-    color: white;
-    margin-top: -20px;
-    margin-bottom: 10px;
-}
-
-.txPage{
-    font-size: 35px;
-}
-
-.buttonPlace{
-  width: 600px;
-}
-
-.buttonPayment{
-  display: flex;
-  column-count: 2;
-  column-gap: 35px;
-  
-}
-
-</style>

@@ -59,7 +59,8 @@
 
               <v-btn depressed large
               dark color="#4E45CE"
-              width="185px">
+              width="185px"
+              router-link to="/withdraw">
                 withdraw
               </v-btn>
           </div>
@@ -119,6 +120,7 @@ export default {
   width: 1000px;
   display: flex;
   margin: auto;
+  margin-top: 30px;
 }
 
 .place{
