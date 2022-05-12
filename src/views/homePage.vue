@@ -36,7 +36,8 @@
           <v-btn depressed large
           dark color="#4E45CE"
           width="185px"
-          style="margin-left:100px">
+          style="margin-left:100px"
+          router-link to="/topup">
             Top Up
           </v-btn>
         </span>
@@ -58,7 +59,8 @@
 
               <v-btn depressed large
               dark color="#4E45CE"
-              width="185px">
+              width="185px"
+              router-link to="/withdraw">
                 withdraw
               </v-btn>
           </div>
@@ -77,7 +79,7 @@
         class="flex"
         flat
         tile
-        style="height:115px" 
+        style="height:135px" 
       >
         <v-card-title class="#110E0E">
           <div class="footerTitle">
@@ -118,6 +120,7 @@ export default {
   width: 1000px;
   display: flex;
   margin: auto;
+  margin-top: 30px;
 }
 
 .place{
@@ -127,7 +130,7 @@ export default {
 }
 
 .internalPage{
-  margin: 10px auto;
+  margin: 5px auto;
 }
 
 .jmlhUang{

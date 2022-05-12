@@ -1,5 +1,5 @@
 <template>
-  <v-app class="pulsaPage">
+  <v-app class="topupPage">
 <div>
     <v-app-bar
       color="#4E45CE"
@@ -37,19 +37,18 @@
   <div class="internalPage">
     <div class="jmlhUang">
       <span class="text">Account Balance</span> <br>
-     <span class="balance">Rp 10.0000.000
-        
+     <span class="balance">Rp
+
           <v-btn depressed large
           dark color="#4E45CE"
           width="185px"
-          style="margin-left:100px"
-          router-link to="/topup">
+          style="margin-left:100px">
             Top Up
           </v-btn>
         </span>
     </div>
 
-<div class="titlePage"><div><span class="txPage">Pulsa</span></div></div>
+<div class="titlePage"><div><span class="txPage">Top up</span></div></div>
 
         <div class="buttonPlace">
           <div class="buttonPayment">
@@ -140,13 +139,25 @@
 
 <script>
 export default {
-    name: "pulsaPage",
+    name: "topupPage",
     data: () => ({
     }),
 }
 </script>
 
 <style>
+
+.titlePage{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.txPage{
+    font-size: 35px;
+}
 
 .buttonPlace{
   width: 600px;
