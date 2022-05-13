@@ -37,7 +37,7 @@
   <div class="internalPage">
     <div class="jmlhUang">
       <span class="noHp">Nomer hp</span> <br>
-      <input type="tel" id="phone" name="phone" placeholder="08xxxx">      
+      <input type="tel" id="phone" name="phone" placeholder="08xxxx"> <!--masuk ke riwayat pembelian-->     
       <span style="margin-left:50px">          
         <v-btn depressed large
           dark color="#4E45CE"
@@ -48,7 +48,7 @@
 
     </div>
 
-<div class="titlePage"><div><span class="txPage">Pulsa</span></div></div>
+<div class="titlePage"><div><span class="txPage">Pulsa</span></div></div> <!--kalo klik tombol bisa ngurangin uang sesuai angka di tombol-->
 
         <div class="buttonPlace">
           <div class="buttonPayment">

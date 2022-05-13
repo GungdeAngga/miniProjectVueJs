@@ -17,7 +17,7 @@
   <div class="internalPage">
     <div class="loginInput">
       <div class="loginForm">
-        <label for="fname">username</label><br>
+        <label for="fname">Username</label><br>
         <input type="text" id="username" name="username" color="#C4C4C4"><br><br>
         <label for="pwd">Password</label><br>
         <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
@@ -30,18 +30,11 @@
           Register
         </v-btn>
       </div>
-      <div class="registerForm">
-        <p>already have account?</p>
-        <v-btn text dark
-        router-link to="/login"
-        color="#4E45CE">
-          Login Here
-        </v-btn>
-      </div>
     </div>
-
   </div>
+
 </div>
+
 
 <div class="footer">
     <v-footer

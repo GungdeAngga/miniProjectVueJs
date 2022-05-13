@@ -18,10 +18,10 @@
   <div class="internalPage">
     <div class="loginInput">
       <div class="loginForm">
-        <label for="fname">username</label><br>
+        <label for="fname">Username</label><br>
         <input type="text" id="username" name="username" color="#C4C4C4"><br><br>
         <label for="pwd">Password</label><br>
-        <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+        <input type="password" id="pwd" name="pwd" minlength="8">
         <v-btn depressed large
         dark color="#4E45CE"
         width="185px"
@@ -30,7 +30,7 @@
         </v-btn>
       </div>
       <div class="registerForm">
-        <p>don't have account?</p>
+        <p>don't have an account?</p>
         <v-btn text dark
         router-link to="/register"
         color="#4E45CE">
@@ -91,16 +91,16 @@ p{
 
 .loginInput{
   margin: 50px auto;
-  width: 500px;
+  width: 700px;
   display: flex;
 }
 
 .loginForm{
-  margin-right: 100px;
+  margin-right: 70px;
 }
 
 .registerForm{
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 label{

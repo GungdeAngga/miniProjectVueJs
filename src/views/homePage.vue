@@ -31,7 +31,7 @@
   <div class="internalPage">
     <div class="jmlhUang">
       <span class="text">Account Balance</span><br>
-      <span class="balance">Rp 10.0000.000</span>
+      <span class="balance">Rp 10.0000.000</span> <!--total jumlah uang di akun (bisa berubah)-->
       <span>          
         <v-btn depressed large
           dark color="#4E45CE"

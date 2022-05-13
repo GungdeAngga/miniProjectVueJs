@@ -37,7 +37,7 @@
   <div class="internalPage">
     <div class="jmlhUang">
       <span class="textTopup">Topup</span> <br>
-      <label style="font-size:20px">Rp </label>
+      <label style="font-size:20px">Rp </label> <!--nambah jumlah uang sesuai yang user mau-->
       <input type="tel" id="topup" name="topup">      
       <span style="margin-left:25px">          
         <v-btn depressed large
@@ -47,7 +47,7 @@
           </v-btn></span>
     </div>
 
-<div class="titlePage"><div><span class="txPage">Top up</span></div></div>
+<div class="titlePage"><div><span class="txPage">Top up</span></div></div> <!--kalo klik tombol bisa nambah uang sesuai angka di tombol-->
 
         <div class="buttonPlace">
           <div class="buttonPayment">

@@ -37,7 +37,7 @@
   <div class="internalPage">
     <div class="jmlhUang">
       <span class="textTopup">Withdraw</span> <br>
-      <label style="font-size:20px">Rp </label>
+      <label style="font-size:20px">Rp </label> <!--ngurangin jumlah uang sesuai yang user mau-->
       <input type="tel" id="withdraw" name="withdraw">      
       <span style="margin-left:25px">          
         <v-btn depressed large
@@ -47,7 +47,7 @@
           </v-btn></span>
     </div>
 
-<div class="titlePage"><div><span class="txPage">Withdraw</span></div></div>
+<div class="titlePage"><div><span class="txPage">Withdraw</span></div></div> <!--kalo klik tombol bisa ngurangin uang sesuai angka di tombol-->
 
         <div class="buttonPlace">
           <div class="buttonPayment">
