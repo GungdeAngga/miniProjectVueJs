@@ -6,6 +6,7 @@ import Login from '@/views/loginPage.vue';
 import Pulsa from '@/views/pulsaPage.vue';
 import Topup from '@/views/topupPage.vue';
 import Withdraw from '@/views/withdrawPage.vue';
+import History from '@/views/historyPage.vue';
 
 Vue.use(VueRouter);
 
@@ -40,6 +41,11 @@ const routes = [
         path: '/withdraw',
         name: 'withdrawPage',
         component: Withdraw,
+    },
+    {
+        path: '/history',
+        name: 'hitoryPage',
+        component: History,
     },
 
 ];

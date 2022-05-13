@@ -13,12 +13,14 @@
 
             <v-spacer></v-spacer>
 
-            <v-btn text>
-              riwayat
+            <v-btn text
+            router-link to="/history">
+              history
             </v-btn>
 
             <v-btn text
-            router-link to="/login">
+            router-link to="/login"
+            color="error">
               Log Out
             </v-btn>
           </div>
@@ -30,7 +32,7 @@
 <div class="place">
   <div class="internalPage">
     <div class="jmlhUang">
-      <span class="text">Account Balance</span><br>
+      <span class="text">Account Balance</span><br> <!--home pulsa topup withdraw histori pake graph ql-->
       <span class="balance">Rp 10.0000.000</span> <!--total jumlah uang di akun (bisa berubah)-->
       <span>          
         <v-btn depressed large
@@ -91,7 +93,7 @@
             </v-btn>    
 
             <v-btn text>
-              security
+              about
             </v-btn>
           </div>
         </v-card-title>

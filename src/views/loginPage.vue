@@ -21,7 +21,7 @@
         <label for="fname">Username</label><br>
         <input type="text" id="username" name="username" color="#C4C4C4"><br><br>
         <label for="pwd">Password</label><br>
-        <input type="password" id="pwd" name="pwd" minlength="8">
+      <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
         <v-btn depressed large
         dark color="#4E45CE"
         width="185px"
@@ -65,7 +65,7 @@
             </v-btn>    
 
             <v-btn text>
-              security
+              about
             </v-btn>
           </div>
         </v-card-title>

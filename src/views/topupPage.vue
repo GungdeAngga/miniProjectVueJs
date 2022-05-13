@@ -10,6 +10,12 @@
   <div class="buttonBack">
     <v-btn text
     router-link to="/">
+        <v-icon
+          dark
+          left
+        >
+          mdi-arrow-left
+        </v-icon>
         back
     </v-btn>
   </div>
@@ -24,7 +30,8 @@
             </v-btn>
 
             <v-btn text
-            router-link to="/login">
+            router-link to="/login"
+            color="error">
               Log Out
             </v-btn>
           </div>
@@ -126,7 +133,7 @@
             </v-btn>    
 
             <v-btn text>
-              security
+              about
             </v-btn>
           </div>
         </v-card-title>

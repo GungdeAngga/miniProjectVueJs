@@ -14,7 +14,7 @@
     </div>
 <!--login register-->
 <div class="place">
-  <div class="internalPage">
+  <div class="internalPage"> <!--login sama register pake axios-->
     <div class="loginInput">
       <div class="loginForm">
         <label for="fname">Username</label><br>
@@ -58,7 +58,7 @@
             </v-btn>    
 
             <v-btn text>
-              security
+              about
             </v-btn>
           </div>
         </v-card-title>
