@@ -33,7 +33,8 @@
       <div class="registerForm">
         <p>already have account?</p>
         <v-btn text dark
-        router-link to="/login">
+        router-link to="/login"
+        color="#4E45CE">
           Login Here
         </v-btn>
       </div>
@@ -84,6 +85,9 @@ export default {
 
 <style>
 
-
+input {
+  width: 300px;
+  height:35px;
+}
 
 </style>

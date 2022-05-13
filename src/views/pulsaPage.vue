@@ -7,14 +7,14 @@
       dark
       style="height: 137px;"
     >
-
   <div class="buttonBack">
     <v-btn text
     router-link to="/">
         back
     </v-btn>
   </div>
-          <div class="header">
+          <div class="headerBack">
+
             <span class="headerTitle"><strong>Corsair</strong></span>
 
             <v-spacer></v-spacer>
@@ -36,17 +36,16 @@
 <div class="place">
   <div class="internalPage">
     <div class="jmlhUang">
-      <span class="text">Account Balance</span> <br>
-     <span class="balance">Rp 10.0000.000
-        
-          <v-btn depressed large
+      <span class="noHp">Nomer hp</span> <br>
+      <input type="tel" id="phone" name="phone" placeholder="08xxxx">      
+      <span style="margin-left:50px">          
+        <v-btn depressed large
           dark color="#4E45CE"
           width="185px"
-          style="margin-left:100px"
           router-link to="/topup">
             Top Up
-          </v-btn>
-        </span>
+          </v-btn></span>
+
     </div>
 
 <div class="titlePage"><div><span class="txPage">Pulsa</span></div></div>
@@ -119,7 +118,7 @@
       >
         <v-card-title class="#110E0E">
           <div class="footerTitle">
-            <strong>Corsair</strong>
+            <span class="textFooterTitle"><strong>Corsair</strong></span>
 
             <v-spacer></v-spacer>
 
@@ -148,6 +147,14 @@ export default {
 
 <style>
 
+.headerBack{
+  width: 1000px;
+  display: flex;
+  margin: auto;
+  margin-top: 34px;
+  margin-left: 362px;
+}
+
 .buttonPlace{
   width: 600px;
 }
@@ -156,7 +163,11 @@ export default {
   display: flex;
   column-count: 2;
   column-gap: 35px;
-  
+}
+
+.noHp{
+  color: white;
+  font-size: 20px;
 }
 
 </style>

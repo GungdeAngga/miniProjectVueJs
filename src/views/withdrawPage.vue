@@ -7,14 +7,14 @@
       dark
       style="height: 137px;"
     >
-
   <div class="buttonBack">
     <v-btn text
     router-link to="/">
         back
     </v-btn>
   </div>
-          <div class="header">
+          <div class="headerBack">
+
             <span class="headerTitle"><strong>Corsair</strong></span>
 
             <v-spacer></v-spacer>
@@ -36,16 +36,15 @@
 <div class="place">
   <div class="internalPage">
     <div class="jmlhUang">
-      <span class="text">Account Balance</span> <br>
-     <span class="balance">Rp
-
-          <v-btn depressed large
+      <span class="textTopup">Withdraw</span> <br>
+      <label style="font-size:20px">Rp </label>
+      <input type="tel" id="withdraw" name="withdraw">      
+      <span style="margin-left:25px">          
+        <v-btn depressed large
           dark color="#4E45CE"
-          width="185px"
-          style="margin-left:100px">
-            withdraw
-          </v-btn>
-        </span>
+          width="185px">
+            Withdraw
+          </v-btn></span>
     </div>
 
 <div class="titlePage"><div><span class="txPage">Withdraw</span></div></div>
@@ -118,7 +117,7 @@
       >
         <v-card-title class="#110E0E">
           <div class="footerTitle">
-            <strong>Corsair</strong>
+            <span class="textFooterTitle"><strong>Corsair</strong></span>
 
             <v-spacer></v-spacer>
 

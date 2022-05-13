@@ -31,16 +31,15 @@
   <div class="internalPage">
     <div class="jmlhUang">
       <span class="text">Account Balance</span><br>
-      <span class="balance">Rp 10.0000.000
-
-          <v-btn depressed large
+      <span class="balance">Rp 10.0000.000</span>
+      <span>          
+        <v-btn depressed large
           dark color="#4E45CE"
           width="185px"
           style="margin-left:100px"
           router-link to="/topup">
             Top Up
-          </v-btn>
-        </span>
+          </v-btn></span>
     </div>
           
           <div class="threeButton">
@@ -83,7 +82,7 @@
       >
         <v-card-title class="#110E0E">
           <div class="footerTitle">
-            <strong>Corsair</strong>
+            <span class="textFooterTitle"><strong>Corsair</strong></span>
 
             <v-spacer></v-spacer>
 
@@ -167,6 +166,10 @@ export default {
   width: 600px;
   display: flex;
   margin: 30px auto;
+}
+
+.textFooterTitle{
+  font-size: 30px;
 }
 
 </style>

@@ -32,7 +32,8 @@
       <div class="registerForm">
         <p>don't have account?</p>
         <v-btn text dark
-        router-link to="/register">
+        router-link to="/register"
+        color="#4E45CE">
           Register Here
         </v-btn>
       </div>
