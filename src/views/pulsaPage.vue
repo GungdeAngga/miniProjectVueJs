@@ -10,6 +10,12 @@
   <div class="buttonBack">
     <v-btn text
     router-link to="/">
+        <v-icon
+          dark
+          left
+        >
+          mdi-arrow-left
+        </v-icon>
         back
     </v-btn>
   </div>
@@ -24,7 +30,8 @@
             </v-btn>
 
             <v-btn text
-            router-link to="/login">
+            router-link to="/login"
+            color="error">
               Log Out
             </v-btn>
           </div>
@@ -127,7 +134,7 @@
             </v-btn>    
 
             <v-btn text>
-              security
+              about
             </v-btn>
           </div>
         </v-card-title>
@@ -147,12 +154,16 @@ export default {
 
 <style>
 
+.buttonBack{
+  margin-top: 60px;
+}
+
 .headerBack{
   width: 1000px;
   display: flex;
   margin: auto;
   margin-top: 34px;
-  margin-left: 362px;
+  margin-left: 340px;
 }
 
 .buttonPlace{
