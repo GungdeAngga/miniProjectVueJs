@@ -34,23 +34,20 @@
 
 <ApolloQuery
   :query="gql => gql`
-query MyQuery {
-  tabel_account_balance(where: {}) {
-    id
-    uang
-  }
+    query MyQuery {
+      tabel_account_balance(where: {}) {
+        id
+        uang
+      }
 
-  }`"
-  
->
+      }`"
+      
+    >
   <template v-slot="{ result: {  data } }">
 
 
-  <!-- Result -->
-  <div  class="result apollo"></div>
-
  
-      <span class="text">Account Balance</span><br> <!--home pulsa topup withdraw histori pake graph ql-->
+      <span class="text">Account Balance</span><br> 
       <span class="balance">Rp {{ data.tabel_account_balance[0].uang }}</span> <!--total jumlah uang di akun (bisa berubah)-->
       <span class="topUpButton">          
         <v-btn depressed large

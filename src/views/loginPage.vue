@@ -28,7 +28,7 @@
       username
     }
   }`"
-  :variables="{ eq, eq1}"
+  :variables="{eq, eq1, name:username, password}"
 >
   <template v-slot="{ result: { loading, error, data } }">
   <div v-if="loading" class="loading apollo">Loading...</div>
@@ -37,25 +37,27 @@
   <div v-else-if="error" class="error apollo">An error occurred</div>
 
   <!-- Result -->
-  <div v-else-if="data" class="result apollo">{{ data }}</div>
+  <div v-else-if="data" class="result apollo">{{ data.tabel_akun[0].username }}</div>
 
-  </template>
-  </ApolloQuery>
+ 
         <label for="fname">Username</label><br>
-        <input type="text" id="username" name="username" v-model="username" color="#C4C4C4"><br><br>
+        <input type="text" id="username" name="username" v-model="username" @keyup.enter="query()" color="#C4C4C4"><br><br>
 
 
         <label for="pwd">Password</label><br>
-        <input type="password" id="password" name="password" v-model="password" minlength="8"><br><br>
+        <input type="password" id="password" name="password" v-model="password" @keyup.enter="query()" minlength="8"><br><br>
 
 
         <v-btn depressed large
         dark color="#4E45CE"
         width="185px"
-        router-link to="/home"> 
+        @click="query()"> 
           login
         </v-btn>
         
+ </template>
+  </ApolloQuery>
+
       </div>
       <div class="registerForm">
         <p>don't have an account?</p>

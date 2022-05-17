@@ -17,6 +17,9 @@
   <div class="internalPage"> 
     <div class="loginInput">
       <div class="loginForm">
+
+
+
         <label for="fname">Username</label><br>
         <input type="text" id="username" name="username" v-model="username" color="#C4C4C4"><br><br>
         <label for="pwd">Password</label><br>
@@ -28,6 +31,8 @@
           Register
         </v-btn>
       </div>
+      
+
       
         <div class="registerForm">
         <p>already have an account?</p>
