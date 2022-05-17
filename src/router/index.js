@@ -6,26 +6,27 @@ import Login from '@/views/loginPage.vue';
 import Pulsa from '@/views/pulsaPage.vue';
 import Topup from '@/views/topupPage.vue';
 import Withdraw from '@/views/withdrawPage.vue';
-import History from '@/views/historyPage.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
 
+
+
     {
         path: '/',
-        name: 'homePage',
-        component: Home,
-    },
+        name: 'loginPage',
+        component: Login,
+    },    
     {
         path: '/register',
         name: 'registerPage',
         component: Register,
     },
     {
-        path: '/login',
-        name: 'loginPage',
-        component: Login,
+        path: '/home',
+        name: 'homePage',
+        component: Home,
     },
     {
         path: '/pulsa',
@@ -42,11 +43,7 @@ const routes = [
         name: 'withdrawPage',
         component: Withdraw,
     },
-    {
-        path: '/history',
-        name: 'hitoryPage',
-        component: History,
-    },
+
 
 ];
 const router = new VueRouter({

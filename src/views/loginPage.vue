@@ -18,16 +18,44 @@
   <div class="internalPage">
     <div class="loginInput">
       <div class="loginForm">
+
+<ApolloQuery
+  :query="gql => gql`
+  query MyQuery($eq: bpchar!, $eq1: String!) {
+    tabel_akun(where: {username: {_eq: $eq}, password: {_eq: $eq1}}) {
+      id
+      password 
+      username
+    }
+  }`"
+  :variables="{ eq, eq1}"
+>
+  <template v-slot="{ result: { loading, error, data } }">
+  <div v-if="loading" class="loading apollo">Loading...</div>
+
+  <!-- Error -->
+  <div v-else-if="error" class="error apollo">An error occurred</div>
+
+  <!-- Result -->
+  <div v-else-if="data" class="result apollo">{{ data }}</div>
+
+  </template>
+  </ApolloQuery>
         <label for="fname">Username</label><br>
-        <input type="text" id="username" name="username" color="#C4C4C4"><br><br>
+        <input type="text" id="username" name="username" v-model="username" color="#C4C4C4"><br><br>
+
+
         <label for="pwd">Password</label><br>
-      <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+        <input type="password" id="password" name="password" v-model="password" minlength="8"><br><br>
+
+
         <v-btn depressed large
         dark color="#4E45CE"
         width="185px"
-        router-link to="/"> <!--tombol login belum singkron (main trobos login)-->
+        router-link to="/home"> 
           login
         </v-btn>
+        
       </div>
       <div class="registerForm">
         <p>don't have an account?</p>
@@ -36,6 +64,8 @@
         color="#4E45CE">
           Register Here
         </v-btn>
+
+
       </div>
     </div>
 
@@ -78,8 +108,12 @@
 <script>
 export default {
     name: "loginPage",
-    data: () => ({
-    }),
+    data() {
+      return {
+        eq: "angga",
+        eq1: "angga",
+      }
+    },
 }
 </script>
 

@@ -9,7 +9,7 @@
     >
   <div class="buttonBack">
     <v-btn text
-    router-link to="/">
+    router-link to="/home">
         <v-icon
           dark
           left
@@ -30,7 +30,7 @@
             </v-btn>
 
             <v-btn text
-            router-link to="/login"
+            router-link to="/"
             color="error">
               Log Out
             </v-btn>
@@ -43,69 +43,46 @@
 <div class="place">
   <div class="internalPage">
     <div class="jmlhUang">
+
+<!-- <ApolloMutation
+          :mutation="
+            (gql) =>
+              gql`
+                mutation MyMutation($id: Int!, $money: Int!) {
+                  tabel_account_balance_by_pk(
+                    pk_columns: { id: $id }
+                    _set: { money: $money }
+                  ) {
+                    id
+                    name
+                  }
+                }
+              `
+          "
+          :variables="{ 
+            id: money.id
+           }"
+        >-->
+
+        
       <span class="textTopup">Topup</span> <br>
       <label style="font-size:20px">Rp </label> <!--nambah jumlah uang sesuai yang user mau-->
-      <input type="tel" id="topup" name="topup">      
-      <span style="margin-left:25px">          
+      <input type="tel" id="topup" name="topup" min="0" v-model="money" @keyup.enter="mutate()">      
+      <span style="margin-left:25px">   
         <v-btn depressed large
           dark color="#4E45CE"
-          width="185px">
+          width="185px"
+          :disabled="loading" @click="mutate()">
             Top Up
           </v-btn></span>
+         <!-- <p v-if="error">An error occurred: {{ error }}</p>
+</ApolloMutation>-->
+
     </div>
 
-<div class="titlePage"><div><span class="txPage">Top up</span></div></div> <!--kalo klik tombol bisa nambah uang sesuai angka di tombol-->
-
-        <div class="buttonPlace">
-          <div class="buttonPayment">
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.10.000
-              </v-btn>
-
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.20.000
-              </v-btn>
-
-          </div>
-          <br>
-          <div class="buttonPayment">
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.50.000
-              </v-btn>
-
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.100.000
-              </v-btn>
-          </div>
-          <br>
-          <div class="buttonPayment">
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.150.000
-              </v-btn>
-
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.200.000
-              </v-btn>
-          </div>
-        </div>
+<div class="titlePage"><div><span class="txPage">Top up</span></div></div> 
+       
+        
       </div>
 </div>
 

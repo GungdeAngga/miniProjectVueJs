@@ -9,7 +9,7 @@
     >
   <div class="buttonBack">
     <v-btn text
-    router-link to="/">
+    router-link to="/home">
         <v-icon
           dark
           left
@@ -30,7 +30,7 @@
             </v-btn>
 
             <v-btn text
-            router-link to="/login"
+            router-link to="/"
             color="error">
               Log Out
             </v-btn>
@@ -43,6 +43,8 @@
 <div class="place">
   <div class="internalPage">
     <div class="jmlhUang">
+
+
       <span class="textTopup">Withdraw</span> <br>
       <label style="font-size:20px">Rp </label> <!--ngurangin jumlah uang sesuai yang user mau-->
       <input type="tel" id="withdraw" name="withdraw">      
@@ -52,60 +54,13 @@
           width="185px">
             Withdraw
           </v-btn></span>
+
+
     </div>
 
-<div class="titlePage"><div><span class="txPage">Withdraw</span></div></div> <!--kalo klik tombol bisa ngurangin uang sesuai angka di tombol-->
+<div class="titlePage"><div><span class="txPage">Withdraw</span></div></div> 
 
-        <div class="buttonPlace">
-          <div class="buttonPayment">
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.10.000
-              </v-btn>
-
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.20.000
-              </v-btn>
-
-          </div>
-          <br>
-          <div class="buttonPayment">
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.50.000
-              </v-btn>
-
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.100.000
-              </v-btn>
-          </div>
-          <br>
-          <div class="buttonPayment">
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.150.000
-              </v-btn>
-
-              <v-btn depressed large
-              dark color="#4E45CE"
-              width="280px"
-              height="80px">
-                Rp.200.000
-              </v-btn>
-          </div>
-        </div>
+       
       </div>
 </div>
 

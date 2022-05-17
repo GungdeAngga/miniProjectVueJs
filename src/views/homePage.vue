@@ -13,13 +13,12 @@
 
             <v-spacer></v-spacer>
 
-            <v-btn text
-            router-link to="/history">
-              history
+            <v-btn text>
+              support
             </v-btn>
 
             <v-btn text
-            router-link to="/login"
+            router-link to="/"
             color="error">
               Log Out
             </v-btn>
@@ -32,9 +31,28 @@
 <div class="place">
   <div class="internalPage">
     <div class="jmlhUang">
+
+<ApolloQuery
+  :query="gql => gql`
+query MyQuery {
+  tabel_account_balance(where: {}) {
+    id
+    uang
+  }
+
+  }`"
+  
+>
+  <template v-slot="{ result: {  data } }">
+
+
+  <!-- Result -->
+  <div  class="result apollo"></div>
+
+ 
       <span class="text">Account Balance</span><br> <!--home pulsa topup withdraw histori pake graph ql-->
-      <span class="balance">Rp 10.0000.000</span> <!--total jumlah uang di akun (bisa berubah)-->
-      <span>          
+      <span class="balance">Rp {{ data.tabel_account_balance[0].uang }}</span> <!--total jumlah uang di akun (bisa berubah)-->
+      <span class="topUpButton">          
         <v-btn depressed large
           dark color="#4E45CE"
           width="185px"
@@ -42,6 +60,9 @@
           router-link to="/topup">
             Top Up
           </v-btn></span>
+
+  </template>
+  </ApolloQuery>
     </div>
           
           <div class="threeButton">
@@ -151,6 +172,11 @@ export default {
 .text{
   color: white;
   font-size: 15px;
+}
+
+.topUpButton{
+  position: absolute; 
+  margin-left: 65px;
 }
 
 .balance{

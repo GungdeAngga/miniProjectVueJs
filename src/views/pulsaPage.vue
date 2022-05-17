@@ -9,7 +9,7 @@
     >
   <div class="buttonBack">
     <v-btn text
-    router-link to="/">
+    router-link to="/home">
         <v-icon
           dark
           left
@@ -30,7 +30,7 @@
             </v-btn>
 
             <v-btn text
-            router-link to="/login"
+            router-link to="/"
             color="error">
               Log Out
             </v-btn>

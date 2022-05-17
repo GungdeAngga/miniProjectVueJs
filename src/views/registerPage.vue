@@ -12,27 +12,33 @@
           </div>
         </v-app-bar>
     </div>
-<!--login register-->
+
 <div class="place">
-  <div class="internalPage"> <!--login sama register pake axios-->
+  <div class="internalPage"> 
     <div class="loginInput">
       <div class="loginForm">
         <label for="fname">Username</label><br>
-        <input type="text" id="username" name="username" color="#C4C4C4"><br><br>
+        <input type="text" id="username" name="username" v-model="username" color="#C4C4C4"><br><br>
         <label for="pwd">Password</label><br>
-        <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
-        <label for="pwd">Re-Password</label><br>
-        <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+        <input type="password" id="password" name="password" v-model="password" minlength="8"><br><br>
         <v-btn depressed large
         dark color="#4E45CE"
         width="185px"
-        router-link to="/login">
+        router-link to="/">
           Register
         </v-btn>
       </div>
+      
+        <div class="registerForm">
+        <p>already have an account?</p>
+        <v-btn text dark
+        router-link to="/"
+        color="#4E45CE">
+          Login Here
+        </v-btn>
+        </div>
     </div>
   </div>
-
 </div>
 
 
